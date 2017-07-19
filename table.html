@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <h1>Table</h1>
+            <nav>
+                <ul type = "square">
+                    <li><a href = ""> about</a></li>
+                    <li><a href = ""> forum</a></li>
+                    <li><a href = "">download</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id = "sidebar">
+            <ol type = "I" start = "3" reversed>
+                <li>Item1</li>
+                <li>Item2</li>
+                <li>Item3</li>
+            </ol>
+        </section>
+        <section id = "main-table">
+            <table border = "1">
+                <tr>
+                <th colspan = "2" rowspan = "2"></th> <th colspan = "2" rowspan = "4"></th> <th colspan = "3" rowspan = "8"></th> <td>1</td>
+                </tr>
+                <tr>
+                <td>2</td>
+                </tr>
+                <tr>
+                <th colspan="2" rowspan="2"></th> <td>3</td>
+                </tr>
+                <tr>
+                <td>4</td>
+                </tr>
+                <tr>
+                <th colspan="4" rowspan="4"></th> <td>5</td>
+                </tr>
+                <tr>
+                <td>6</td>
+                </tr>
+                <tr>
+                <td>7</td>
+                </tr>
+                <tr>
+                <td>8</td>
+                </tr>
+                <tr>
+                <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td></td>
+                </tr>
+        </table>
+    </section>
+    <footer>
+        <br>
+        
+        <form method="POST" action="https://formspree.io/sc.muska@gmail.com">
+            <fieldset>
+            Contact us:
+            <br>
+            <label>Your name
+                <input type="text" name="client-name" required>
+            </label><br>
+            <label>Your phone
+                <input type="text" name="client-name" required
+                pattern="[+]{1}[0-9]{12}" placeholder = "+380671111111">
+            </label><br>
+            <label>Your email
+                <input type="email" name="client-mail" required>
+            </label>
+            
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+            </fieldset>
+            <fieldset>
+                <label>
+                    <br>Write your comment:
+                    <br><textarea name = "comment"></textarea>
+                </label>
+            </fieldset>
+            
+        </form>
+        
+    </footer>
+</body>
+</html>
